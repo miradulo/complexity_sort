@@ -1,1 +1,1 @@
-from .complexity_sort import sort
+import .complexity_sort
