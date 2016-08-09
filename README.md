@@ -76,9 +76,8 @@ __complexity_sort__ is nothing more than the application of a few ideas, leaning
 	 ![](http://i.imgur.com/6ixIDwT.png)
 
 <a name=lemma2></a>
-
 - __Lemma 2__
-- 
+
 	 ![](http://i.imgur.com/aFRenjL.png)
 
 - __The transitive relational properties of Θ, Ω, ω, _O_, _o___
