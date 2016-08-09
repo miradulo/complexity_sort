@@ -134,7 +134,7 @@ ValueError: List is not sortable with number of comparable elements.
 
 - Provide proofs for these lemmas using basic limit definitions. 
 
-If you see anything else that could be improved, by all means go for it or drop me a mail and let me know your thoughts. My email can be find on my [about me page](https://mitchelledwardsnaith.github.io/about/)
+If you see anything else that could be improved, by all means go for it or drop me a mail and let me know your thoughts. My email can be find on my [personal information page](https://mitchelledwardsnaith.github.io/about/).
 
 ## Licence 
 
