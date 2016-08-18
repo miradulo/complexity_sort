@@ -1,6 +1,6 @@
 # complexity_sort
 
- __Sorts functions by their asymptotic complexity in increasing order__
+ __Sort functions by their asymptotic complexity in increasing order__
 
 ![](http://i.imgur.com/3tPGLZB.png)
 
