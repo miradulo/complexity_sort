@@ -4,8 +4,6 @@ import complexity_sort
 
 def test_sort():
 
-    # refactor to use indices.
-
     # Lists 1 to 3 taken and verified against
     #  MIT OCW 6.006 Fall 2011 Problem Set 1 Question 1.1
     l1 = [1.000001 ** n, n ** 0.99999999 * log(n), 10000000*n, n**2, sin(n) + 100000]
