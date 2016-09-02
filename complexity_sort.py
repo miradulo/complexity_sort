@@ -58,7 +58,7 @@ def sort(it, variable=None, parser=None):
             return it
         else:
             raise ValueError('There are multiple variables within '
-                             'the list of expressions.\n '
+                             'the iterable of expressions.\n '
                              'Please specify a variable to order the complexities with respect to.')
 
     compare_with_var = functools.partial(_order_comp, variable=variable)
@@ -87,7 +87,7 @@ def _dag(l, variable):
     try:
         return sympy.utilities.iterables.topological_sort((vertices, edges))
     except (ValueError, TypeError):
-        raise ValueError('List is not sortable with number of comparable elements.')
+        raise ValueError('Iterable is not sortable with number of comparable elements.')
 
 
 @functools.lru_cache()
