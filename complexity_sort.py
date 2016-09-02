@@ -50,7 +50,7 @@ def sort(it, variable=None, parser=None):
         if variable is not None:
             variable = use_parser(variable)
 
-    if not variable:
+    if not variable:   # we must determine the lone variable to calculate with respect to
         free_syms = functools.reduce(operator.or_, [expr.free_symbols for expr in it])
         if len(free_syms) == 1:
             variable = free_syms.pop()
@@ -64,7 +64,7 @@ def sort(it, variable=None, parser=None):
     compare_with_var = functools.partial(_order_comp, variable=variable)
     try:
         return sorted(it, key=functools.cmp_to_key(compare_with_var))
-    except _ComparisonException:
+    except _ComparisonException:   # we cannot apply direct sort -> produce a directed graph
         return _dag(it, variable)
 
 
@@ -81,7 +81,7 @@ def _dag(l, variable):
         try:
             order = _order_comp(i, j, variable)
         except _ComparisonException:
-            order = None
+            order = None 
         if order:
             edges.append((i, j)[::-order])
     try:
@@ -138,7 +138,7 @@ def _use_sup_inf_limits(a, b, sym):
 
 
 def _max_and_min(lim):
-    if type(lim) is AccumulationBounds:
+    if type(lim) is AccumulationBounds:   # indicates we have an infinite bound 
         return lim.max, lim.min
     return lim, lim
 
