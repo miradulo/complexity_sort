@@ -101,6 +101,8 @@ We let each function denote a vertex in our graph, and let the directed edges re
 
 We then attempt to apply a topological sort to the graph with the hope that it contains no [directed cycles](https://en.wikipedia.org/wiki/Cycle_graph#Directed_cycle_graph)<sup>3</sup>. This is permissible due to the transitive relational properties of the asymptotic definitions. 
 
+_Note_: Although the comments above are the conventional way to describe topological sort, to me it is more intuitive to see it as a product of the [Szpilrajn extension theorem](https://en.wikipedia.org/wiki/Szpilrajn_extension_theorem), which intuitively just says that a set does not have to assert that every element is greater than or less than some other element. 
+
 ##### Example
 
 Consider the list of functions from above:
